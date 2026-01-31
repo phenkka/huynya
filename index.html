@@ -69,6 +69,33 @@
       font-size: 12px;
     }
 
+    a {
+      color: #0ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .terminal-footer {
+      margin-top: 28px;
+      padding-top: 12px;
+      border-top: 1px solid #0f0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      color: #0a0;
+      font-size: 12px;
+    }
+
+    .terminal-footer .links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
     .message {
       margin-bottom: 25px;
       padding: 15px;
@@ -158,6 +185,14 @@
 
   <div id="status-msg" class="status-msg"></div>
   <div id="conversation"></div>
+
+  <footer class="terminal-footer">
+    <div>[LINKS]</div>
+    <div class="links">
+      <a href="https://github.com/openclaw/openclaw" target="_blank" rel="noreferrer">github: openclaw/openclaw</a>
+      <a href="#" target="_blank" rel="noreferrer">twitter: (soon)</a>
+    </div>
+  </footer>
 
   <script>
     const API_KEY = 'sk-e492676cdd624446aa91818e022f2af2';
