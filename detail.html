@@ -180,7 +180,7 @@
     const messageData = JSON.parse(localStorage.getItem('currentMessage'));
 
     if (!messageData) {
-      window.location.href = window.location.protocol === 'file:' ? 'index.html' : '/';
+      window.location.href = 'index.html';
     }
 
     // Отображаем оригинальное сообщение
