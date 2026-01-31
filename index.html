@@ -341,7 +341,7 @@
           sigil: generateSigil()
         };
         localStorage.setItem('currentMessage', JSON.stringify(messageData));
-        const detailUrl = window.location.protocol === 'file:' ? 'detail.html' : 'detail';
+        const detailUrl = window.location.protocol === 'file:' ? 'detail.html' : 'detail/';
         window.location.href = detailUrl;
       });
       
