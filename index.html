@@ -190,7 +190,7 @@
     <div>[LINKS]</div>
     <div class="links">
       <a href="https://github.com/openclaw/openclaw" target="_blank" rel="noreferrer">github: openclaw/openclaw</a>
-      <a href="#" target="_blank" rel="noreferrer">twitter: (soon)</a>
+      <a href="https://x.com/infiniteclawrooms" target="_blank" rel="noreferrer">twitter: infiniteclawrooms</a>
     </div>
   </footer>
 
@@ -341,7 +341,8 @@
           sigil: generateSigil()
         };
         localStorage.setItem('currentMessage', JSON.stringify(messageData));
-        window.location.href = 'detail.html';
+        const detailUrl = window.location.protocol === 'file:' ? 'detail.html' : 'detail';
+        window.location.href = detailUrl;
       });
       
       conversation.appendChild(msgDiv);
