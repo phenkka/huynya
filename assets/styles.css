@@ -12,10 +12,26 @@
   --shadow: 0 0 0 rgba(0,0,0,0);
 }
 
-* { box-sizing: border-box; }
+* { 
+  box-sizing: border-box;
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
 
 html, body {
   height: 100%;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
 
 body {
